@@ -3,7 +3,7 @@ name: TV app
 # Publishing a release builds dx.bi TV (Android TV) and attaches dxbi-tv.apk to that release.
 # Running it by hand just builds it (kept as a workflow artifact).
 #
-# Release builds are signed with dx.bi TV's key, kept in the repository's secrets:
+# Release builds are signed with this fork's own dx.bi TV key (app ID com.liorodin.dxbi.tv), kept in the repository's secrets:
 #   DXBI_TV_KEYSTORE_B64       the keystore, base64-encoded
 #   DXBI_TV_KEYSTORE_PASSWORD  its password (the key uses the same one; alias dxbi-tv)
 # Without them the job stops before building, so a release never gets a differently signed APK
