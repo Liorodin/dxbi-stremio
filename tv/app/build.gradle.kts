@@ -22,7 +22,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.notdxbi.dxbi.tv"
+        applicationId = "com.liorodin.dxbi.tv"
         minSdk = 24
         targetSdk = 35
         versionName = dxbiVersion

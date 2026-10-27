@@ -1,0 +1,22 @@
+name: Plugin
+
+# Publishing a release attaches dxbi.plugin.js to it: dx.bi TV fetches the plugin from the latest
+# release on every launch and switches to it when its @version is newer.
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  attach:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.release.tag_name }}
+      - name: Attach to the release
+        run: gh release upload "${{ github.event.release.tag_name }}" dxbi.plugin.js dxbi.theme.css --clobber
+        env:
+          GH_TOKEN: ${{ github.token }}
