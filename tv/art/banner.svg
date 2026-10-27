@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <radialGradient id="bg" cx="0.22" cy="0.35" r="1.1">
+      <stop offset="0" stop-color="#262626"/><stop offset="0.5" stop-color="#161616"/><stop offset="1" stop-color="#0b0b0b"/>
+    </radialGradient>
+    <linearGradient id="play" x1="0.1" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#ff2a32"/><stop offset="1" stop-color="#c4070f"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="70"/></filter>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="300" cy="366" r="190" fill="#e50914" opacity="0.34" filter="url(#blur)"/>
+  <path d="M222 226 L432 360 L222 494 Z" fill="url(#play)" stroke="url(#play)" stroke-width="70" stroke-linejoin="round"/>
+  <text x="530" y="446" font-family="Segoe UI" font-weight="700" font-size="250" letter-spacing="-6" fill="#ffffff">dx<tspan fill="url(#play)">.</tspan>bi</text>
+</svg>
