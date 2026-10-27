@@ -17,6 +17,6 @@ jobs:
         with:
           ref: ${{ github.event.release.tag_name }}
       - name: Attach to the release
-        run: gh release upload "${{ github.event.release.tag_name }}" dxbi.plugin.js dxbi.theme.css --clobber
+        run: gh release upload "${{ github.event.release.tag_name }}" dxbi.plugin.js dxbi.theme.css install.ps1 install.sh --clobber
         env:
           GH_TOKEN: ${{ github.token }}

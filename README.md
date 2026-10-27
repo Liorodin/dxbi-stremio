@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/notdxbi/dxbi-stremio/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/notdxbi/dxbi-stremio?label=release&color=e50914&style=flat-square"></a>
+  <a href="https://github.com/Liorodin/dxbi-stremio/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/Liorodin/dxbi-stremio?label=release&color=e50914&style=flat-square"></a>
   <img alt="Windows · macOS · Linux · Android TV · Fire TV" src="https://img.shields.io/badge/Windows%20·%20macOS%20·%20Linux%20·%20Android%20TV%20·%20Fire%20TV-222?style=flat-square">
   <a href="NOTICE.md"><img alt="GPL-3.0" src="https://img.shields.io/badge/license-GPL--3.0-222?style=flat-square"></a>
   <a href="https://discord.gg/nnVBjqZ84F"><img alt="Discord" src="https://img.shields.io/badge/Discord-join-5865F2?style=flat-square&logo=discord&logoColor=white"></a>
@@ -32,6 +32,12 @@
 > [!NOTE]
 > DX.BI is a personal fan project I made for my own use and decided to share. It was built with the help of [Claude Code](https://www.anthropic.com/claude-code), Anthropic's AI coding assistant. It isn't affiliated with Netflix or Stremio.
 
+> [!IMPORTANT]
+> **This is a fork** of [notdxbi/dxbi-stremio](https://github.com/notdxbi/dxbi-stremio), all credit for dx.bi goes to its author. It adds:
+> - **Smoother browsing**: fewer blur effects on posters and panels, lighter hover animations, and less background work while you scroll.
+> - **Updates from this fork**: the apps check [this repository's releases](https://github.com/Liorodin/dxbi-stremio/releases), not the original's.
+> - **Its own TV app** (`com.liorodin.dxbi.tv`) with a new red icon. It installs next to the original dx.bi TV rather than over it.
+
 <br>
 
 ## Install
@@ -40,10 +46,10 @@ Pick your device below. It takes about two minutes.
 
 | Device | Download |
 |---|---|
-| Windows 10 and 11 | [**Download for Windows**](https://github.com/notdxbi/dxbi-stremio/releases/latest/download/dxbi-Setup-x64.exe) |
-| Mac with an Apple chip (M1, M2, M3, M4…) | [**Download for Mac (Apple chip)**](https://github.com/notdxbi/dxbi-stremio/releases/latest/download/dxbi-mac-arm64.dmg) |
-| Mac with an Intel chip | [**Download for Mac (Intel)**](https://github.com/notdxbi/dxbi-stremio/releases/latest/download/dxbi-mac-x64.dmg) |
-| Linux | [**Download for Linux**](https://github.com/notdxbi/dxbi-stremio/releases/latest/download/dxbi-linux-x86_64.AppImage) |
+| Windows 10 and 11 | [**Download for Windows**](https://github.com/Liorodin/dxbi-stremio/releases/latest/download/dxbi-Setup-x64.exe) |
+| Mac with an Apple chip (M1, M2, M3, M4…) | [**Download for Mac (Apple chip)**](https://github.com/Liorodin/dxbi-stremio/releases/latest/download/dxbi-mac-arm64.dmg) |
+| Mac with an Intel chip | [**Download for Mac (Intel)**](https://github.com/Liorodin/dxbi-stremio/releases/latest/download/dxbi-mac-x64.dmg) |
+| Linux | [**Download for Linux**](https://github.com/Liorodin/dxbi-stremio/releases/latest/download/dxbi-linux-x86_64.AppImage) |
 | Android TV, Google TV, Fire TV | [**See the TV steps**](#on-a-tv) |
 
 Not sure which Mac you have? Click the Apple menu  → *About This Mac*. "Chip: Apple M…" means an Apple chip; "Processor: Intel" means Intel.
@@ -64,7 +70,7 @@ dx.bi sets up Stremio's streaming server by itself (it's what plays torrents), a
 <summary>Prefer not to install anything?</summary>
 <br>
 
-Download [`dxbi-portable-x64.exe`](https://github.com/notdxbi/dxbi-stremio/releases/latest/download/dxbi-portable-x64.exe) instead: it runs straight away, without installing.
+Download [`dxbi-portable-x64.exe`](https://github.com/Liorodin/dxbi-stremio/releases/latest/download/dxbi-portable-x64.exe) instead: it runs straight away, without installing.
 </details>
 
 ### On a Mac
@@ -96,7 +102,7 @@ xattr -dr com.apple.quarantine /Applications/dx.bi.app
 <summary>It doesn't open?</summary>
 <br>
 
-Some distributions need *FUSE* for AppImages. On Ubuntu and Debian: `sudo apt install libfuse2`. On a Raspberry Pi or another ARM computer, download [`dxbi-linux-arm64.AppImage`](https://github.com/notdxbi/dxbi-stremio/releases/latest/download/dxbi-linux-arm64.AppImage) instead.
+Some distributions need *FUSE* for AppImages. On Ubuntu and Debian: `sudo apt install libfuse2`. On a Raspberry Pi or another ARM computer, download [`dxbi-linux-arm64.AppImage`](https://github.com/Liorodin/dxbi-stremio/releases/latest/download/dxbi-linux-arm64.AppImage) instead.
 </details>
 
 ### On a TV
@@ -112,7 +118,7 @@ dx.bi TV runs on Android TV, Google TV and Fire TV (Fire TV Sticks, Cubes and Fi
 **3. Download dx.bi.** Open Downloader, select the address box and type:
 
 ```
-github.com/notdxbi/dxbi-stremio/releases/latest/download/dxbi-tv.apk
+github.com/Liorodin/dxbi-stremio/releases/latest/download/dxbi-tv.apk
 ```
 
 Select **Go**. When the download finishes, choose **Install**, then **Open**.
@@ -131,7 +137,7 @@ Good to know:
 
 ### After installing
 
-dx.bi keeps itself up to date. On Windows and Linux it downloads new versions in the background and offers to restart; on a Mac it tells you and you download the new version; on a TV it offers the update when it starts.
+dx.bi keeps itself up to date. On Windows and Linux it downloads new versions in the background and offers to restart; on a Mac it tells you and you download the new version; on a TV the look and features update by themselves (from the next launch, nothing to install), and a new TV app version is offered when it starts.
 
 - **Already used Stremio Enhanced?** The first time the computer app opens, it offers to copy your sign-in, library, settings and plugins over. Stremio Enhanced itself isn't changed.
 
@@ -155,13 +161,13 @@ You can add dx.bi to [Stremio Enhanced](https://github.com/REVENGE977/stremio-en
 1. Run one command. On Windows, open *PowerShell* and paste:
 
    ```powershell
-   irm https://github.com/notdxbi/dxbi-stremio/releases/latest/download/install.ps1 | iex
+   irm https://github.com/Liorodin/dxbi-stremio/releases/latest/download/install.ps1 | iex
    ```
 
    On macOS or Linux, open *Terminal* and paste:
 
    ```bash
-   curl -fsSL https://github.com/notdxbi/dxbi-stremio/releases/latest/download/install.sh | bash
+   curl -fsSL https://github.com/Liorodin/dxbi-stremio/releases/latest/download/install.sh | bash
    ```
 
 2. Restart Stremio Enhanced.
@@ -174,7 +180,7 @@ Updates are offered automatically inside Stremio Enhanced.
 <summary>Prefer to install the plugin by hand?</summary>
 <br>
 
-1. Download [`dxbi.plugin.js`](https://github.com/notdxbi/dxbi-stremio/releases/latest/download/dxbi.plugin.js).
+1. Download [`dxbi.plugin.js`](https://github.com/Liorodin/dxbi-stremio/releases/latest/download/dxbi.plugin.js).
 2. In Stremio Enhanced, go to *Settings → Enhanced*, open *Open Plugins Folder* and put the file there.
 3. Restart and switch the plugin on.
 
@@ -535,6 +541,14 @@ Check that you both typed the same code and are on dx.bi 2.6.0 or newer. Parties
 Stremio changes its interface now and then. Post it in **#bug-reports** on the [dx.bi Discord](https://discord.gg/nnVBjqZ84F) or [open an issue](https://github.com/notdxbi/dxbi-stremio/issues), with a screenshot.
 
 <br>
+
+## Releasing an update (this fork)
+
+1. Make the change, raise `@version` at the top of `dxbi.plugin.js`, then run `node tools/bundle-theme.mjs` (copies the theme into the plugin and syncs the app versions).
+2. Commit and push to `main`.
+3. Publish a GitHub release tagged `v` + that version (for example `v2.19.2`).
+
+The release workflows then attach `dxbi.plugin.js` (*Plugin*), the signed `dxbi-tv.apk` (*TV app*, needs the `DXBI_TV_KEYSTORE_B64` and `DXBI_TV_KEYSTORE_PASSWORD` secrets) and the computer apps (*Desktop app*). TVs pick up the new plugin on their next launches and offer the new APK.
 
 ## Licence
 
